@@ -1,0 +1,28 @@
+\documentclass{letter}
+\usepackage[top=0.5cm, bottom=0.5cm]{geometry}
+\usepackage{xcolor}
+\date{\today}
+
+% \newcommand{\master}{M.Sc. Mathematics}
+% \newcommand{\uni}{University of Bonn}
+% \newcommand{\city}{Bonn}
+% \newcommand{\scholar}{DAAD grant}
+
+\newcommand{\program}{Ph.D.\ position}
+\newcommand{\uni}{Imperial college of London}
+\newcommand{\city}{UK}
+% \newcommand{\scholar}{PSL grant}
+
+%% for scholarship 
+\begin{document}
+\begin{letter}
+  \hfill
+
+  \textbf{Research Proposal: Machine Learning approaches to improve the efficiency of fluid dynamics simulations}
+
+  OpenFOAM and CFD simulations are often computational expensive both in terms of resources and time. CFD codes often use explicit methods that require small time steps of the order of micro-nano seconds. Thus, even one second of flow simulation would require million to billion steps. Thus, speed-up of these methods and codes would make more sustainable and greener simulations. While today's algorithms already use techniques like adaptive time-stepping to enable faster compute times, these are based on standard metrics. One of the common one is the usage of Courant number to ensure atleast conditional stability of the time-stepping scheme. In this work, we aim to augment these standard metrics used in physics-driven high-fidelity simulations with low-fidelity data-driven models and mixed precision usage for potential and a more intelligent speedup. The work would interface OpenFOAM with ML algorithms to run intermittently to enable overall speedup of CFD simulations.
+
+  \bigskip
+
+\end{letter}
+\end{document}
